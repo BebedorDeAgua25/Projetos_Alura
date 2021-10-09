@@ -1,0 +1,71 @@
+<body text = "darkred"></body>
+<meta charset="utf-8">
+<canvas width="600" height="400"></canvas>
+
+<h1>Uma flor, para outra flor</h1>
+
+<script>
+	
+	var tela = document.querySelector("canvas");
+	var pincel = tela.getContext ("2d");
+
+	function pintar(cor, começoHorizontal, começoVertical, fimHorizontal, fimVertical) {
+
+		pincel.fillStyle = cor;
+		pincel.fillRect(começoHorizontal, começoVertical, fimHorizontal, fimVertical);
+	}
+
+	function pintarTriangulo(cor, começo1, fim1, começo2, fim2, começo3, fim3) {
+
+		pincel.fillStyle = cor;
+		pincel.beginPath();
+		pincel.moveTo(começo1, fim1);
+		pincel.lineTo(começo2, fim2);
+		pincel.lineTo(começo3, fim3);
+		pincel.fill();
+	}
+
+	function pintarCirculo(cor, coordenadaDeInicioX, coordenadaDeInicioY, raio, anguloInicial) {
+
+		pincel.fillStyle = cor;
+		pincel.beginPath();
+		pincel.arc(coordenadaDeInicioX, coordenadaDeInicioY, raio, anguloInicial, 2 * 3.14);
+		pincel.fill();
+	}
+
+	function pintarFlor(corPetalasDeTras, corPetalasDaFrente, corMeio, corCaule) {
+
+		pintarCirculo(corPetalasDeTras, 120 + 45, 160, 30, 0);
+		pintarCirculo(corPetalasDeTras, 120 + 45, 240, 30, 0);
+		pintarCirculo(corPetalasDeTras, 120, 200, 30, 0);
+		pintarCirculo(corPetalasDeTras, 120 + 90, 200, 30, 0);
+		pintar(corCaule, 120 + 35, 220, 20, 230);
+		pintarCirculo(corPetalasDaFrente, 135, 170, 30, 0);
+		pintarCirculo(corPetalasDaFrente, 195, 170, 30, 0);
+		pintarCirculo(corPetalasDaFrente, 135, 230, 30, 0);
+		pintarCirculo(corPetalasDaFrente, 195, 230, 30, 0);
+		pintarCirculo(corMeio, 120 + 45, 200, 30, 0);
+	}
+
+	/*
+	pintar("green", 0, 0, 600, 400);
+
+	pintarTriangulo("yellow", 50, 200, 300, 50, 550, 200)
+	pintarTriangulo("yellow", 50, 200, 300, 350, 550, 200)
+
+	pintarCirculo("darkblue", 300, 200, 100, 0);
+	*/
+
+	//era a atividade da bandeira do brasil antes, por isso o comentário acima -w-'
+
+	pintar("#B22222", 0, 0, 350, 400);
+
+	pintar("#800000", 0, 0, 350, 400);
+	pintarTriangulo("#B22222", 25, 25, 325, 25, 325, 375);
+
+	pintarTriangulo("#800000", 0, 0, 0, 400, 350, 400);
+	pintarTriangulo("#B22222", 25, 70, 25, 375, 290, 375);
+
+	pintarFlor("darkred", "red", "yellow", "green");
+
+</script>

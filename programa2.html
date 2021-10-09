@@ -1,0 +1,37 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+	
+	var tela = document.querySelector("canvas");
+	var pincel = tela.getContext ("2d");
+
+	function pintar(cor, começoHorizontal, começoVertical, fimHorizontal, fimVertical) {
+
+		pincel.fillStyle = cor;
+		pincel.fillRect(começoHorizontal, começoVertical, fimHorizontal, fimVertical);
+	}
+
+	function pintarTriangulo(cor, começo1, fim1, começo2, fim2, começo3, fim3) {
+
+		pincel.fillStyle = cor;
+		pincel.beginPath();
+		pincel.moveTo(começo1, fim1);
+		pincel.lineTo(começo2, fim2);
+		pincel.lineTo(começo3, fim3);
+		pincel.fill();
+	}
+
+	function pintarCirculo(cor, coordenadaDeInicioX, coordenadaDeInicioY, raio, anguloInicial) {
+
+		pincel.fillStyle = cor;
+		pincel.beginPath();
+		pincel.arc(coordenadaDeInicioX, coordenadaDeInicioY, raio, anguloInicial, 2 * 3.14);
+		pincel.fill();
+	}
+
+	pintar("lightgray", 0, 0, 600, 400);
+
+	pintarTriangulo("black", 50, 50, 50, 400, 400, 400);
+	pintarTriangulo("lightgray", 100, 175, 100, 350, 275, 350);
+
+</script>

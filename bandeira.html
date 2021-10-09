@@ -1,0 +1,24 @@
+<canvas width="1300" height="800"></canvas>
+
+<script text="text/javascript">
+
+	var tela = document.querySelector("canvas");
+	var pincel = tela.getContext("2d");
+
+	function pintarQuadrado(cor, coordenadaHorizontal, coordenadaVertical, largura, altura) {
+
+		pincel.fillStyle = cor;
+		pincel.fillRect(coordenadaHorizontal, coordenadaVertical, largura, altura);
+	}
+
+	pintarQuadrado("gray", 0, 0, 1300, 800 )
+
+	pintarQuadrado("navy", 0, 100, 433, 600)
+
+	pintarQuadrado("white", 433, 100, 433, 600)
+
+	pintarQuadrado("red", 866, 100, 433, 600)
+
+	alert("Espero que goste de como o a bandeira ficou prof, fiz usando o que a senhora ensinou no último meet -w-")
+
+</script>

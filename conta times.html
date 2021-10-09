@@ -1,0 +1,25 @@
+<meta charset="utf-8">
+
+<script>
+	
+	function pularLinha() {
+
+		document.write("<br>")
+	}
+
+	function mostrar(frase) {
+
+		document.write(frase)
+		pularLinha()
+	}
+
+	var clube = parseInt(prompt("Quantos times jogaram?"));
+
+	function calcularJogos(clubes) {
+
+		return (clubes * clubes) - clubes
+	}
+
+	mostrar("No campeonato, foram no total " + calcularJogos(clube) + " jogos!")
+	
+</script>

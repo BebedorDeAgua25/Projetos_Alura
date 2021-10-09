@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+
+<h3>Álcool ou Gasolina?</h3>
+
+<script>
+	alert("Essa é uma lição de programação")
+	alert("Onde eu tive que fazer um problema matemático, resolve-lo e tudo com variáveis")
+	alert("Posso dizer que me diverti bastante fazendo, e estou orgulhoso do resultado")
+	alert("Aproveite!")
+
+	var tanque = 40;
+	var caminhoComGasolina = 480;
+
+	document.write("Seu carro tem um tanque de " + tanque + " litros.<br>");
+	document.write("Com gasolina e usando todo o tanque, você percorreu um caminho de " + caminhoComGasolina + " quilômetros.<br>");
+	document.write("Qual é o consumo de gasolina gasto?");
+
+	var consumoDeGasolina = (caminhoComGasolina / tanque);
+
+	document.write("<br><br>A resposta é " + Math.round(consumoDeGasolina) + "!<br>");
+
+	var caminhoComAlcool = 300;
+
+	document.write("<br><br>Com álcool, um tanque de 40 litros percorreu um caminho com alcool de " + caminhoComAlcool + " quilômetros. Qual é o consumo de alcool gasto?");
+
+	var consumoDeAlcool = (caminhoComAlcool / tanque);
+
+	document.write("<br><br>A resposta é " + Math.round(consumoDeAlcool) + "!<br>");
+	document.write("<br><br><br>Isso foi mais simples do que pensei hehe.");
+	
+</script>

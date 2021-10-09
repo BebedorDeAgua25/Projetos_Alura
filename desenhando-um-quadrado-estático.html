@@ -1,0 +1,177 @@
+<canvas width="1300" height="900"></canvas>
+
+<script text="text/javascript">
+
+	var tela = document.querySelector("canvas");
+	var pincel = tela.getContext("2d");
+
+	function pintarQuadrado(cor, coordenadaHorizontal, coordenadaVertical) {
+
+		pincel.fillStyle = cor;
+		pincel.fillRect(coordenadaHorizontal, coordenadaVertical, 100, 100);
+	}
+
+	function fazerPrimeiraLinha() {
+
+		pintarQuadrado("#330000", 0, 0);
+		pintarQuadrado("#331900", 100, 0);
+		pintarQuadrado("#333300", 200, 0);
+		pintarQuadrado("#193300", 300, 0);
+		pintarQuadrado("#003300", 400, 0);
+		pintarQuadrado("#003319", 500, 0);
+		pintarQuadrado("#003333", 600, 0);
+		pintarQuadrado("#001933", 700, 0);
+		pintarQuadrado("#000033", 800, 0);
+		pintarQuadrado("#190033", 900, 0);
+		pintarQuadrado("#330033", 1000, 0);
+		pintarQuadrado("#330019", 1100, 0);
+		pintarQuadrado("#000000", 1200, 0);
+	}
+
+	function fazerSegundaLinha() {
+
+		pintarQuadrado("#660000", 0, 100);
+		pintarQuadrado("#663300", 100, 100);
+		pintarQuadrado("#666600", 200, 100);
+		pintarQuadrado("#336600", 300, 100);
+		pintarQuadrado("#006600", 400, 100);
+		pintarQuadrado("#006633", 500, 100);
+		pintarQuadrado("#006666", 600, 100);
+		pintarQuadrado("#003366", 700, 100);
+		pintarQuadrado("#000066", 800, 100);
+		pintarQuadrado("#330066", 900, 100);
+		pintarQuadrado("#660066", 1000, 100);
+		pintarQuadrado("#660033", 1100, 100);
+		pintarQuadrado("#202020", 1200, 100);
+	}
+
+	function fazerTerceiraLinha() {
+
+		pintarQuadrado("#990000", 0, 200);
+		pintarQuadrado("#994C00", 100, 200);
+		pintarQuadrado("#999900", 200, 200);
+		pintarQuadrado("#4C9900", 300, 200);
+		pintarQuadrado("#009900", 400, 200);
+		pintarQuadrado("#00994C", 500, 200);
+		pintarQuadrado("#009999", 600, 200);
+		pintarQuadrado("#004C99", 700, 200);
+		pintarQuadrado("#000099", 800, 200);
+		pintarQuadrado("#4C0099", 900, 200);
+		pintarQuadrado("#990099", 1000, 200);
+		pintarQuadrado("#99004C", 1100, 200);
+		pintarQuadrado("#404040", 1200, 200);
+	}
+
+	function fazerQuartaLinha() {
+
+		pintarQuadrado("#CC0000", 0, 300);
+		pintarQuadrado("#CC6600", 100, 300);
+		pintarQuadrado("#CCCC00", 200, 300);
+		pintarQuadrado("#66CC00", 300, 300);
+		pintarQuadrado("#00CC00", 400, 300);
+		pintarQuadrado("#00CC66", 500, 300);
+		pintarQuadrado("#00CCCC", 600, 300);
+		pintarQuadrado("#0066CC", 700, 300);
+		pintarQuadrado("#0000CC", 800, 300);
+		pintarQuadrado("#6600CC", 900, 300);
+		pintarQuadrado("#CC00CC", 1000, 300);
+		pintarQuadrado("#CC0066", 1100, 300);
+		pintarQuadrado("#606060", 1200, 300);
+	}
+
+	function fazerQuintaLinha() {
+
+		pintarQuadrado("#FF0000", 0, 400);
+		pintarQuadrado("#FF8000", 100, 400);
+		pintarQuadrado("#FFFF00", 200, 400);
+		pintarQuadrado("#80FF00", 300, 400);
+		pintarQuadrado("#00FF00", 400, 400);
+		pintarQuadrado("#00FF80", 500, 400);
+		pintarQuadrado("#00FFFF", 600, 400);
+		pintarQuadrado("#0080FF", 700, 400);
+		pintarQuadrado("#0000FF", 800, 400);
+		pintarQuadrado("#7F00FF", 900, 400);
+		pintarQuadrado("#FF00FF", 1000, 400);
+		pintarQuadrado("#FF007F", 1100, 400);
+		pintarQuadrado("#808080", 1200, 400);
+	}
+
+	function fazerSextaLinha() {
+
+		pintarQuadrado("#FF3333", 0, 500);
+		pintarQuadrado("#FF9933", 100, 500);
+		pintarQuadrado("#FFFF33", 200, 500);
+		pintarQuadrado("#99FF33", 300, 500);
+		pintarQuadrado("#33FF33", 400, 500);
+		pintarQuadrado("#33FF99", 500, 500);
+		pintarQuadrado("#33FFFF", 600, 500);
+		pintarQuadrado("#3399FF", 700, 500);
+		pintarQuadrado("#3333FF", 800, 500);
+		pintarQuadrado("#9933FF", 900, 500);
+		pintarQuadrado("#FF33FF", 1000, 500);
+		pintarQuadrado("#FF3399", 1100, 500);
+		pintarQuadrado("#A0A0A0", 1200, 500);
+	}
+
+	function fazerSetimaLinha() {
+
+		pintarQuadrado("#FF6666", 0, 600);
+		pintarQuadrado("#FFB266", 100, 600);
+		pintarQuadrado("#FFFF66", 200, 600);
+		pintarQuadrado("#B2FF66", 300, 600);
+		pintarQuadrado("#66FF66", 400, 600);
+		pintarQuadrado("#66FFB2", 500, 600);
+		pintarQuadrado("#66FFFF", 600, 600);
+		pintarQuadrado("#66B2FF", 700, 600);
+		pintarQuadrado("#6666FF", 800, 600);
+		pintarQuadrado("#B266FF", 900, 600);
+		pintarQuadrado("#FF66FF", 1000, 600);
+		pintarQuadrado("#FF66B2", 1100, 600);
+		pintarQuadrado("#C0C0C0", 1200, 600);
+	}
+
+	function fazerOitavaLinha() {
+
+		pintarQuadrado("#FF9999", 0, 700);
+		pintarQuadrado("#FFCC99", 100, 700);
+		pintarQuadrado("#FFFF99", 200, 700);
+		pintarQuadrado("#CCFF99", 300, 700);
+		pintarQuadrado("#99FF99", 400, 700);
+		pintarQuadrado("#99FFCC", 500, 700);
+		pintarQuadrado("#99FFFF", 600, 700);
+		pintarQuadrado("#99CCFF", 700, 700);
+		pintarQuadrado("#9999FF", 800, 700);
+		pintarQuadrado("#CC99FF", 900, 700);
+		pintarQuadrado("#FF99FF", 1000, 700);
+		pintarQuadrado("#FF99CC", 1100, 700);
+		pintarQuadrado("#E0E0E0", 1200, 700);
+	}
+
+	function fazerNonaLinha() {
+
+		pintarQuadrado("#FFCCCC", 0, 800);
+		pintarQuadrado("#FFE5CC", 100, 800);
+		pintarQuadrado("#FFFFCC", 200, 800);
+		pintarQuadrado("#E5FFCC", 300, 800);
+		pintarQuadrado("#CCFFCC", 400, 800);
+		pintarQuadrado("#CCFFE5", 500, 800);
+		pintarQuadrado("#CCFFFF", 600, 800);
+		pintarQuadrado("#CCE5FF", 700, 800);
+		pintarQuadrado("#CCCCFF", 800, 800);
+		pintarQuadrado("#E5CCFF", 900, 800);
+		pintarQuadrado("#FFCCFF", 1000, 800);
+		pintarQuadrado("#FFCCE5", 1100, 800);
+		pintarQuadrado("#FFFFFF", 1200, 800);
+	}
+
+	fazerPrimeiraLinha();
+	fazerSegundaLinha();
+	fazerTerceiraLinha();
+	fazerQuartaLinha();
+	fazerQuintaLinha();
+	fazerSextaLinha();
+	fazerSetimaLinha();
+	fazerOitavaLinha();
+	fazerNonaLinha();
+	
+</script>

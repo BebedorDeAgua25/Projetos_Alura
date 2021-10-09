@@ -1,0 +1,34 @@
+<meta charset="utf-8">
+
+<script>
+	
+	function pularLinha() {
+
+		document.write("<br>")
+	}
+
+	function mostrar(frase) {
+
+		document.write(frase)
+		pularLinha()
+	}
+
+	function sorteiarNumero(numeroMaximoDoSorteio) {
+
+		return Math.round(Math.random() * numeroMaximoDoSorteio);
+	}
+
+	var numeroPensado = sorteiarNumero(10);
+
+	var chute = parseInt(prompt("Digite um número entre 0 a 10"))
+
+	if(chute == numeroPensado) {
+
+		mostrar("Você acertou!")
+
+	} else {
+
+		mostrar("Você errou, o número pensado foi " + numeroPensado + " boa sorte da próxima vez!")
+	}
+	
+</script>
